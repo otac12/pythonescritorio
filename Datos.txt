@@ -1,0 +1,28 @@
+[
+
+{   
+    "Economico":"12345678",
+    "MarcaInput":"toyota",
+    "ModeloInput":"2222",
+    "YearInput":"3333",
+    "VersionInput":"G35D",
+    "ColorInput":"verde",
+    "TipoVehiculo":"Nuevo",
+    "DisponibilidadInput":"Disponible",
+    "SucursalInput":"Mylsa(CDMX)",
+    "PrecioInput":"133000",
+    "StatusInventario":"",
+    "LocalizacionInput":"",
+    "WebInput":"Si",
+    "FechaFacturacionInput":"",
+    "FechaPagoInput":"",
+    "NoImportacionInput":"",
+    "NoPedidoInput":"123123",
+    "AccesoriosInput":"",
+    "NoMotorInput":"",
+    "VinInput":"19971997",
+    "CombustiblesInput":"0",
+    "NotasInput":""
+}
+
+]

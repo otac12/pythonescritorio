@@ -1,0 +1,20 @@
+=== Reporte de Validación de Campos ===
+Fecha de generación del reporte: 10/25/24-28-2024 13:28:26
+Archivo procesado desde la URL: https://mylsa.com.mx/Pilot/php/AgregarStock.php
+
+12345678 -------------------------------------------------------------- (Completo)
+[x] MarcaInput
+[x] VinInput
+[x] Economico
+[x] ModeloInput
+[x] YearInput
+[x] VersionInput
+[x] ColorInput
+[x] NoPedidoInput
+[x] DisponibilidadInput
+[x] SucursalInput
+[x] CombustiblesInput
+[x] PrecioInput
+[x] TipoVehiculo
+
+Exito
