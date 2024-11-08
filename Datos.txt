@@ -1,28 +1,26 @@
 [
-
-{   
-    "Economico":"12345678",
-    "MarcaInput":"toyota",
-    "ModeloInput":"2222",
-    "YearInput":"3333",
-    "VersionInput":"G35D",
-    "ColorInput":"verde",
-    "TipoVehiculo":"Nuevo",
-    "DisponibilidadInput":"Disponible",
-    "SucursalInput":"Mylsa(CDMX)",
-    "PrecioInput":"133000",
-    "StatusInventario":"",
-    "LocalizacionInput":"",
-    "WebInput":"Si",
-    "FechaFacturacionInput":"",
-    "FechaPagoInput":"",
-    "NoImportacionInput":"",
-    "NoPedidoInput":"123123",
-    "AccesoriosInput":"",
-    "NoMotorInput":"",
-    "VinInput":"19971997",
-    "CombustiblesInput":"0",
-    "NotasInput":""
+{
+"Economico":"2025TR0039",
+"MarcaInput":"FORD",
+"ModeloInput":"TERRITORY",
+"YearInput":"2025",
+"VersionInput":"AMBIENTE FWD 1.8L",
+"ColorInput":"AZUL PROFUNDO",
+"TipoVehiculo":"Nuevo",
+"DisponibilidadInput":"No Disponible",
+"SucursalInput":"Mylsa(CDMX)",
+"PrecioInput":"0",
+"StatusInput":"PISO",
+"LocalizacionInput":"",
+"WebInput":"Si",
+"FechaFacturacionInput":"",
+"FechaPagoInput":"",
+"NoImportacionInput":"245116694011230",
+"NoPedidoInput":"49426",
+"AccesoriosInput":"",
+"NoMotorInput":"S/N",
+"VinInput":"LJXBS5A33SYF02132",
+"CombustiblesInput":"0",
+"NotasInput":""
 }
-
 ]

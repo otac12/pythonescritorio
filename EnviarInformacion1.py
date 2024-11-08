@@ -2,14 +2,6 @@ import os
 import json
 import requests
 from datetime import datetime
-import tkinter as tk
-from tkinter import messagebox
-
-def MostrarPopup(Mensaje):
-    Ventana = tk.Tk()
-    Ventana.withdraw() 
-    messagebox.showinfo("Información", Mensaje)
-    Ventana.destroy()
 
 def ValidarInformacion(datos):
     bandera = 0
@@ -22,14 +14,14 @@ def ValidarInformacion(datos):
     
     Reporte = []
     Reporte.append("=== Reporte de Validación de Campos ===\n")
-    Reporte.append(f"Fecha de generación del reporte: {Fecha}\n")
-    Reporte.append(f"Archivo procesado desde la URL: {url}\n\n")
+    Reporte.append("Fecha de generación del reporte: {}\n".format(Fecha))
+    Reporte.append("Archivo procesado desde la URL: {}\n\n".format(url))
 
     # Procesamos cada registro en el JSON
     for i, Registro in enumerate(datos):
 
         # Obtener el valor de 'Economico' para identificar el registro
-        Economico = Registro.get("Economico", f"Registro {i + 1}")
+        Economico = Registro.get("Economico", "Registro {}".format(i + 1))
 
         Faltantes = []
 
@@ -47,11 +39,11 @@ def ValidarInformacion(datos):
         # Añadimos la checklist
         for Dato in InputRequeridos:
             if Dato not in Registro or not Registro[Dato]:  
-                Reporte.append(f"[ ] {Dato}\n")  # Casilla vacía si falta el campo
+                Reporte.append("[ ] {}\n".format(Dato))  # Casilla vacía si falta el campo
                 bandera += 1
 
             else:
-                Reporte.append(f"[x] {Dato}\n")  # Casilla marcada si el campo está presente
+                Reporte.append("[x] {}\n".format(Dato)) # Casilla marcada si el campo está presente
 
         Reporte.append("\n")
 
@@ -76,7 +68,7 @@ def ValidarInformacion(datos):
                     Reporte.append("Exito")
                 
             else:
-                    print(f"Error al acceder a la URL: {response.status_code}")
+                    print("Error al acceder a la URL: {}".format(response.status_code))
         else:
             Reporte.append("!!Datos Incompletos!!")
 
@@ -87,9 +79,8 @@ def ValidarInformacion(datos):
     with open(NombreReporte, 'w', encoding = 'utf-8') as file:
         file.writelines(Reporte)
 
-    print(f"Reporte generado: {NombreReporte}")
+    print("Reporte generado: {}".format(NombreReporte))
 
-    MostrarPopup("Se validaron y se subieron los datos aceptados")
 
 try:
     with open('Datos.txt', 'r') as archivo:
@@ -107,6 +98,3 @@ except KeyError as e:
     print(f"Error: La clave {e} no existe en el JSON.")
 except Exception as e:
     print("Ocurrió un error inesperado:", str(e))
-
-
-
