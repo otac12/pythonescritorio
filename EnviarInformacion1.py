@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import json
 import requests
@@ -8,7 +9,7 @@ def ValidarInformacion(datos):
     # Información requerida
     InputRequeridos = ["MarcaInput", "VinInput", "Economico", "ModeloInput", "YearInput", "VersionInput", "ColorInput", "NoPedidoInput", "DisponibilidadInput", "SucursalInput", "CombustiblesInput","PrecioInput","TipoVehiculo"]
 
-    Fecha = datetime.now().strftime("%D-%M-%Y %H:%M:%S")
+    Fecha = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     
     url = 'https://mylsa.com.mx/Pilot/php/AgregarStock.php'
     
@@ -76,8 +77,9 @@ def ValidarInformacion(datos):
 
     # Guardamos el reporte en un archivo de texto
     NombreReporte = "Reporte.txt"
-    with open(NombreReporte, 'w', encoding = 'utf-8') as file:
-        file.writelines(Reporte)
+    with open(NombreReporte, 'w') as file:
+        for line in Reporte:
+            file.writelines(line)
 
     print("Reporte generado: {}".format(NombreReporte))
 
