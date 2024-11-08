@@ -1,0 +1,61 @@
+Datos maestros
+--Pilot ==> Nuestro sistema
+
+
+***StatusInput***
+-- PISO ==> Piso
+-- CDM ==> CDM
+-- EDIS ==> Envio Distribuidor
+-- CARR ==> Carroceria
+-- ADUA ==> Aduana
+
+***CombustiblesInput***
+
+-- 0 ==> Gasolina
+-- 1 ==> Diesel
+-- 2 ==> Gas LP
+-- 3 ==> Electrico
+-- 4 ==> Gas y Electrico
+
+***LocalizacionInput***
+
+-- AGS ==> AGUASCALIENTES
+-- BC ==> BAJA CALIFORNIA
+-- BCS ==> BAJA CALIFORNIA SUR
+-- CAMP ==> CAMPECHE
+-- CHIS ==> CHIAPAS
+-- CHIH ==> CHIHUAHUA
+-- COAH ==> COAHUILA
+-- COL ==> COLIMA
+-- DF ==> CIUDAD DE MEXICO
+-- DGO ==> DURANGO
+-- MEX ==> ESTADO DE MEXICO
+-- GTO ==> GUANAJUATO
+-- GRO ==> GUERRERO
+-- HGO ==> HIDALGO
+-- JAL ==> JALISCO
+-- MICH ==> MICHOACAN
+-- MOR ==> MORELOS
+-- NAY ==> NAYARIT
+-- NL ==> NUEVO LEON
+-- OAX ==> OAXACA
+-- PUE ==> PUEBLA
+-- QRO ==> QUERETARO
+-- Q.ROO ==> QUINTANA ROO
+-- SLP ==> SAN LUIS POTOSI
+-- SIN ==> SINALOA
+-- SON ==> SONORA
+-- TAB ==> TABASCO
+-- TAMPS ==> TAMAULIPAS
+-- TLAX ==> TLAXCALA
+-- VER ==> VERACRUZ
+-- YUC ==> YUCATAN
+-- ZAC ==> ZACATECAS
+
+*** DisponibilidadInput ***
+
+--Disponible
+--No Disponible
+
+
+
